@@ -40,6 +40,7 @@
             font-size: 16px;
             border: none;
             cursor: pointer;
+            margin-bottom: 10px;
         }
 
         #addToCartButton:hover {
@@ -47,14 +48,12 @@
         }
 
         #cartInfo {
-            position: fixed;
-            top: 15px;
-            right: 15px;
             background-color: #fff;
             padding: 15px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             text-align: center;
+            margin-top: 15px;
         }
 
         #cartIcon {
@@ -88,18 +87,28 @@
         #clearCartButton:hover {
             background-color: #c0392b;
         }
+
+        @media only screen and (max-width: 600px) {
+            main {
+                padding: 15px;
+            }
+
+            #cartInfo {
+                margin-top: 0;
+            }
+        }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Genesys Demo</h1>
+    <h1>E-commerce Demo</h1>
 </header>
 
 <main>
     <!-- Your product details and other content -->
-    <h1>Product Name</h1>
-    <p>Price: $19.99</p>
+    <h1>Test Product</h1>
+    <p>Price: $999</p>
 
     <!-- Add to Cart button -->
     <button id="addToCartButton">Add to Cart</button>
@@ -120,8 +129,8 @@
     // Simulate adding an item to the cart
     document.getElementById('addToCartButton').addEventListener('click', function() {
         // You can customize this part with your actual product details
-        var productName = 'Product Name';
-        var productPrice = 19.99;
+        var productName = 'Test Product';
+        var productPrice = 999;
 
         // Create a new cart item
         var cartItem = document.createElement('li');
