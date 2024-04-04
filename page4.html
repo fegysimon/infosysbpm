@@ -1,1 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Demo - Third Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
 
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1, p {
+            margin: 0;
+        }
+
+        #backToFirstPageButton {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 15px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            margin-bottom: 15px;
+        }
+
+        #backToFirstPageButton:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>E-commerce Demo - Forth  Page</h1>
+</header>
+
+<main>
+    <!-- Your content for the second page goes here -->
+
+    <!-- Back to First Page Button -->
+    <button id="backToFirstPageButton">Back to First Page</button>
+</main>
+
+<script>
+    // Back to First Page Button Event Listener
+    document.getElementById('backToFirstPageButton').addEventListener('click', function() {
+        // Use the browser's history object to go back
+        window.history.back();
+    });
+</script>
+
+</body>
+</html>
